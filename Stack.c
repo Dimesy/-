@@ -4,17 +4,21 @@
 int *stack; 
 int sp = 0; 
 
-int pop(void){ 
-if (sp > 0){ 
+int pop(void)
+{ 
+if (sp > 0)
+{ 
 return stack[--sp]; 
 } 
-else { 
+else 
+{ 
 printf("-1"); 
 return 0; 
 } 
 } 
 
-void push(int a){ 
+void push(int a)
+{ 
 stack[sp++] = a; 
 } 
 
@@ -28,7 +32,8 @@ if ( stack == NULL ) exit (1);
 
 for( i = 1; i < k; i++ ) 
 { 
-switch ( (char) argv[i][0] ){ 
+switch ( (char) argv[i][0] )
+{ 
 case '\n': 
 break; 
 case '=': 
